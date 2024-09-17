@@ -1,0 +1,240 @@
+hii {
+  color: hsl(237, 18%, 59%);
+  color: hsl(345, 95%, 68%);
+  color: hsl(0, 0%, 100%);
+  color: hsl(236, 21%, 26%);
+  color: hsl(235, 16%, 14%);
+  color: hsl(234, 17%, 12%);
+}
+@font-face {
+  font-family: "myFont";
+  src: url("./design/RedHatText-VariableFont_wght.ttf");
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+body {
+  background-color: hsl(235, 16%, 14%);
+  height: 97vh;
+  overflow-x: hidden;
+}
+.star-image {
+  background-image: url(./images/bg-stars.svg);
+  width: 100%;
+  height: 70%;
+  background-size: contain;
+}
+.hill-image {
+  background-image: url(./images/pattern-hills.svg);
+  width: 100%;
+  height: 28%;
+  display: flex;
+  align-items: center;
+}
+.icons {
+  margin: 0px auto;
+}
+img {
+  padding: 16px;
+}
+img:hover {
+  background-color: hsl(345, 95%, 68%);
+  color: hsl(234, 17%, 12%);
+  cursor: pointer;
+}
+h3 {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-family: myFont;
+  letter-spacing: 2px;
+  position: relative;
+  top: 90px;
+}
+.box1 {
+  width: 11%;
+  height: 55px;
+  color: hsl(236, 21%, 26%);
+  margin: 0px auto;
+  background-color: hsl(236, 21%, 26%);
+  position: relative;
+  top: 121px;
+  left: -227px;
+  border-radius: 6px 6px 0px 0px;
+}
+.box2 {
+  width: 11%;
+  height: 55px;
+  color: hsl(236, 21%, 26%);
+  margin: 0px auto;
+  background-color: hsl(236, 21%, 26%);
+  position: relative;
+  top: 121px;
+  border-radius: 0px 0px 6px 6px;
+  left: -227px;
+}
+.line {
+  position: relative;
+  top: 121px;
+  left: -227px;
+  margin: 0px auto;
+  height: 1px;
+}
+
+.line::after {
+  content: "h";
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+.container {
+  text-align: center;
+  padding-inline: 1rem;
+  max-width: 1440px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown .title {
+  position: relative;
+  background-color: #2c2c44;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.3rem;
+
+  width: 104px;
+  height: 101px;
+}
+
+.countdown .title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.countdown .title h2 {
+  color: hsl(345, 95%, 68%);
+  font-family: myFont;
+  font-size: 56px;
+  line-height: 70px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  top: 15px;
+}
+h1 {
+  display: none;
+}
+
+.countdown .title h2::before {
+  content: "";
+  position: absolute;
+  top: 43%;
+  left: -5px;
+  width: 9px;
+  height: 9px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.countdown .title h2::after {
+  content: "";
+  position: absolute;
+  top: 43%;
+  right: -5px;
+  width: 9px;
+  height: 9px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.countdown .count:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.countdown .count p {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  color: hsl(237, 18%, 59%);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: myFont;
+}
+.countdown-container {
+  position: relative;
+  top: 120px;
+}
+
+@media only screen and (width <= 800px) {
+  h3 {
+    margin: 0px auto;
+    padding: 0px 41px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    align-content: stretch;
+    position: relative;
+    left: 8px;
+  }
+  .countdown-container {
+    position: relative;
+    top: 120px;
+    width: 87%;
+  }
+  .count {
+    width: 75px;
+  }
+  .countdown .title {
+    position: relative;
+    background-color: #2c2c44;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.3rem;
+    width: 76px;
+    height: 101px;
+    left: 31px;
+  }
+  .countdown .count p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.7rem;
+    color: hsl(237, 18%, 59%);
+    font-weight: 500;
+    font-size: 9px;
+    font-family: myFont;
+    position: relative;
+    left: 42px;
+  }
+  .hill-image {
+    background-size: cover;
+    width: 81%;
+    padding: -52px;
+    padding: 0px 45px;
+    height: -4%;
+    height: 18%;
+    margin-top: 107px;
+  }
+  .icons {
+    font-size: 0px;
+    position: relative;
+    top: 17px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
