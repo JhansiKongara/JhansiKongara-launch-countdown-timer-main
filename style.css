@@ -190,6 +190,7 @@ h1 {
     align-content: stretch;
     position: relative;
     left: 8px;
+    text-align: center;
   }
   .countdown-container {
     position: relative;
